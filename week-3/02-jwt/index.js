@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const zod = require('zod');
 const jwtPassword = 'secret';
 
 
@@ -15,6 +16,26 @@ const jwtPassword = 'secret';
  */
 function signJwt(username, password) {
     // Your code here
+    const user = {
+        username: username,
+        password: password
+    };
+    const schema = zod.object({
+        username: zod.string().email(),
+        password: zod.string().min(6)
+    });
+
+    try {
+        const userData = schema.safeParse(user);
+        if(!userData.success) {
+            return null;
+        }
+        const token = jwt.sign(user, jwtPassword);
+        return token;
+    } catch (error) {
+        return null;
+    }
+    
 }
 
 /**
@@ -27,6 +48,12 @@ function signJwt(username, password) {
  */
 function verifyJwt(token) {
     // Your code here
+    try {
+        jwt.verify(token, jwtPassword);
+        return true;
+    } catch (error) {
+        return false;
+    }
 }
 
 /**
@@ -38,12 +65,23 @@ function verifyJwt(token) {
  */
 function decodeJwt(token) {
     // Your code here
+    // checking for non jwt string 
+    if (!token || token.split('.').length !== 3) {
+        return false;
+    }
+
+    try {
+        const decoded = jwt.decode(token);
+        return true;
+    } catch (error) {
+        return false;
+    }
 }
 
 
 module.exports = {
-  signJwt,
-  verifyJwt,
-  decodeJwt,
-  jwtPassword,
+    signJwt,
+    verifyJwt,
+    decodeJwt,
+    jwtPassword,
 };
