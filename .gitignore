@@ -1,6 +1,7 @@
 # Ignore node_modules directory
 node_modules/
 01-js/node_modules/
+coverage/
 
 # Ignore build output
 build/
