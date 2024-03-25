@@ -1,0 +1,71 @@
+/* App.jsx CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #201f1f;
+}
+
+.container {
+  margin:0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 4rem;
+  font-family:cursive;
+  font-weight: bold;
+  color: #f7f7f7;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  background-color: #fff;
+  color: #201f1f;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #201f1f;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.input {
+  display: block;
+  margin: auto;
+  width: 40%;
+  margin-top: 1.5rem;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #696868;
+  color: #f7f7f7;
+  border: 1px solid #d8d4d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #f7f7f7;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px 20px;
+  margin: 0 3rem;
+  margin-top: 2rem;
+}

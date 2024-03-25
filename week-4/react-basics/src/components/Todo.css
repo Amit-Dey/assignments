@@ -1,0 +1,29 @@
+
+h3{
+    color: #f3f3f3;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p{
+    color: #f3f3f3;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+button{
+    background-color: #eb5050;
+    color: #eeeeee;
+    border: none;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+.todo{
+    background-color: #333333;
+    padding: 1.5rem;
+    margin: 1em 0;
+    border-radius: 0.5em;
+}
