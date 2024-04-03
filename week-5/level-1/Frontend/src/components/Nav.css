@@ -1,0 +1,36 @@
+/* nav css */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+border-bottom:#f1f1f1 solid 1px;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+}
+.nav__logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap : 1rem;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__links a:hover {
+  color: #f1f1f1;
+}
