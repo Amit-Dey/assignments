@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #201f1f;
+  background-color: #222831;
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
   font-size: 4rem;
   font-family:cursive;
   font-weight: bold;
-  color: #f7f7f7;
+  color: #EEEEEE;
   margin-top: 1.5rem;
 }
 
@@ -27,16 +27,17 @@ body {
   padding: 10px 20px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
-  background-color: #fff;
-  color: #201f1f;
+  background-color: #00ADB5;
+  color: #EEEEEE;
   border: none;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 .button:hover {
-  background-color: #201f1f;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: #222831;
+  color: #EEEEEE;
+  border: 1px solid #EEEEEE;
   cursor: pointer;
 }
 
@@ -47,25 +48,30 @@ body {
   margin-top: 1.5rem;
   padding: 10px;
   font-size: 16px;
-  background-color: #696868;
-  color: #f7f7f7;
-  border: 1px solid #d8d4d4;
+  background-color: #393E46;
+  color: #EEEEEE;
+  border: 1px solid #EEEEEE;
   border-radius: 4px;
   box-sizing: border-box;
   margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: #EEEEEE;
 }
 
 h2 {
   margin-top: 2.5rem;
   font-size: 2rem;
   font-family: 'Courier New', Courier, monospace;
-  color: #f7f7f7;
+  color: #EEEEEE;
 }
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 5px 20px;
   margin: 0 3rem;
   margin-top: 2rem;
+  align-items: center;
 }

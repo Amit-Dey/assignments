@@ -3,9 +3,10 @@ import './App.css'
 import Todo from './components/Todo'
 
 function App() {
-  const [todos, setTodos] = useState([{ id: 1, title: 'Todo 1', description: 'Description 1' }
-    , { id: 2, title: 'Todo 2', description: 'Description 2' },
-  { id: 3, title: 'Todo 3', description: 'Description 3' }
+  const [todos, setTodos] = useState([
+    { id: 1, title: 'Todo 1', description: 'Description 1' },
+    { id: 2, title: 'Todo 2', description: 'Description 2' },
+    { id: 3, title: 'Todo 3', description: 'Description 3' },
 ])
 
   const addTodo = () => {
@@ -20,8 +21,8 @@ function App() {
     <div className='container'>
       <h1 className='title'>Todo App</h1>
 
-      <input className='input' type="text" name="title" />
-      <input className='input' type="text" name="description" />
+      <input className='input' type="text" name="title" placeholder='Title'/>
+      <input className='input' type="text" name="description" placeholder='Description' />
       <button className='button' onClick={addTodo} >Add Todo</button>
 
       <h2>Todo List</h2>

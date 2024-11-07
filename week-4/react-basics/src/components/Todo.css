@@ -1,12 +1,12 @@
 
 h3{
-    color: #f3f3f3;
+    color: #EEEEEE;
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 
 p{
-    color: #f3f3f3;
+    color: #EEEEEE;
     font-size: 1.2em;
     margin-bottom: 0.5em;
 }
@@ -22,7 +22,7 @@ button{
 }
 
 .todo{
-    background-color: #333333;
+    background-color: #00ADB5;
     padding: 1.5rem;
     margin: 1em 0;
     border-radius: 0.5em;
