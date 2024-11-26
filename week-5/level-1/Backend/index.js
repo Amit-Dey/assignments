@@ -11,6 +11,7 @@
 const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
+
 // Importing Models
 const { Card, User } = require('./db');
 
@@ -141,4 +142,3 @@ app.use((error, req, res, next) => {
 app.listen(3000, () => {
     console.log('Server started on http://localhost:3000');
 });
-

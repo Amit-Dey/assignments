@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 // connect to the database
-mongoose.connect('Your MongoDB Connection String');
+mongoose.connect('your mongodb uri');
 
 // card schema
 const cardSchema = new mongoose.Schema({

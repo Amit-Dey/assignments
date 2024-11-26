@@ -15,12 +15,12 @@ const Nav = () => {
     if (token) {
         return (
             <>
-
                 <nav className="nav">
                     <div className="nav__logo">
                         <Link to="/">E-Bysiness Card</Link>
                     </div>
                     <div className="nav__links">
+                        <Link to="/createcard">Create Card</Link>
                         <Link to="/profile">Profile</Link>
                         <Link to="/cards">Cards</Link>
                         <Link onClick={signout}>Sign Out</Link>
@@ -33,7 +33,6 @@ const Nav = () => {
     }
     return (
         <>
-
             <nav className="nav">
                 <div className="nav__logo">
                     <Link to="/">E-Bysiness Card</Link>

@@ -1,5 +1,3 @@
-const request = require('supertest');
-const assert = require('assert');
 const express = require('express');
 
 const app = express();
@@ -10,12 +8,10 @@ let requestCount = 0;
 // maintain a count of the number of requests made to the server in the global
 // requestCount variable
 
-function requestCounter(req, res, next) {
+app.use((req, res, next) => {
   requestCount++;
   next();
-}
-
-app.use(requestCounter);
+});
 
 
 app.get('/user', function(req, res) {
